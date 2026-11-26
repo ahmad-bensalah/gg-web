@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>gg-web</title></head>
-<body><h1>gg-web</h1></body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orb Catcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Orb Catcher</h1>
+    <div class="hud">
+      <span>Score: <strong id="score">0</strong></span>
+      <span>Lives: <strong id="lives">3</strong></span>
+      <span>Best: <strong id="best">0</strong></span>
+    </div>
+    <canvas id="game" width="400" height="560"></canvas>
+    <p class="help">Move with ← → or A / D, or drag on touch screens. Catch the glowing orbs and dodge the red spikes.</p>
+    <button id="start">Start</button>
+  </main>
+  <script src="game.js"></script>
+</body>
 </html>
